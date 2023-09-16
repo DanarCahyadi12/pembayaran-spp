@@ -28,3 +28,9 @@ Aplikasi pembayaran SPP berbasis website
 <h2>
   Halaman pada website
 </h2>
+<ul>
+  <li>
+    <p>Halaman Register</p>
+    <img src="https://user-images.githubusercontent.com/110749286/268428316-c4496a9a-ef8f-4ec9-b20a-e50151c936c4.png">
+  </li>
+</ul>
