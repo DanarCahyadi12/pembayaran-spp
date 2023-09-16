@@ -30,7 +30,41 @@ Aplikasi pembayaran SPP berbasis website
 </h2>
 <ul>
   <li>
-    <p>Halaman Register</p>
+    <p>Register</p>
     <img src="https://user-images.githubusercontent.com/110749286/268428316-c4496a9a-ef8f-4ec9-b20a-e50151c936c4.png">
+  </li>
+  <li>
+    <p>Login</p>
+    <img src="https://user-images.githubusercontent.com/110749286/268428322-f77d77ea-239e-4f0d-8325-01eb92c45a6d.png">
+  </li>
+  <li>
+    <strong> Admin </strong>
+    <ul>
+      <li> 
+        <p>Dashboard</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428424-1663ad9c-07bb-4888-befd-1982c35ac426.png">
+      </li>
+      <li> 
+        <p>Detail siswa</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428432-7de53704-1fab-435d-84a2-e273dd706985.png">
+      </li>
+      <li> 
+        <p>Update siswa</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428437-7a0565cc-6286-4d34-83db-97d0500ad6ad.png">
+      </li>
+      <li> 
+        <p>Mencari siswa</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428444-37742744-9d8f-47f8-8fc5-ca9b991b863d.png">
+      </li>
+      <li> 
+        <p>Menambahkan siswa</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428455-6ac2411d-d46b-4fa2-b0ef-7a0c447ac29d.png">
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong> Petugas </strong>
+    <ul> </ul>
   </li>
 </ul>
