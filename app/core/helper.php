@@ -173,3 +173,7 @@ function setStatusToNotPaid($siswa){
 
     return $result;
 }
+
+function passwordValidation($minCharacter,$password ){
+    return strlen($password )>= $minCharacter ? true : false;
+}

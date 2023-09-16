@@ -18,6 +18,7 @@
             <Label class="text-black" for="password">Password</Label>
             <input type="password" required class="form-control" name="password" id="password">
         </div>
-        <button class="btn btn-primary mt-3">Login</button>
+        <button class="btn btn-primary mt-3 mb-3 mr-3">Login</button>
+        <a href="<?= url('register') ?>">Belum punya akun?</a>
     </form>
 </div>

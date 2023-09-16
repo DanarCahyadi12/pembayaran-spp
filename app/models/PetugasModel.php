@@ -18,12 +18,12 @@ class PetugasModel {
         
     }
 
-    public function createPetugas($username,$email,$password) {
+    public function createPetugas($username,$email,$password,$level) {
         $this->db->query('INSERT INTO users (username,email,password,level) VALUES (:username,:email,:password,:level)');
         $this->db->bind('username',$username);
         $this->db->bind('email',$email);
         $this->db->bind('password',$password);
-        $this->db->bind('level',0);
+        $this->db->bind('level',$level);
         return $this->db->execute();
         
     }
