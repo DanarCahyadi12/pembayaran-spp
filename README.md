@@ -1,5 +1,5 @@
-# Pembayaran-spp
-Aplikasi pembayaran SPP berbasis website
+# Aplikasi pembayaran-spp berbasis website
+Aplikasi pembayaran SPP berbasis website menggunakan <strong> MVC </strong> pattern
 <p>Terdapat 2 level user pada website ini yaitu <strong>admin</strong> dan <strong>petugas</strong></p>
 <p><strong>Admin</strong> hanya memiliki akses untuk menambahkan data siswa, menghapus data siswa,mengupdate data siswa</p>
 <p><strong>Petugas</strong> hanya memiliki akses untuk mengelola data pembayaran spp</p>
@@ -87,5 +87,24 @@ Aplikasi pembayaran SPP berbasis website
         <img src="https://user-images.githubusercontent.com/110749286/268428521-8dca20c2-046a-43a5-a596-28992f4e656e.png">
       </li>
     </ul>
+  </li>
+</ul>
+
+<h2>Installasi</h2>
+<ul>
+  <li>
+    Buat database dengan nama SPP (nama database bebas, yang penting isi dari variabel config untuk koneksi database sesuai dengan nama database yang ada)
+  </li>
+  <li>
+    Download SQL untuk query pembuatan tabel dan data - data <a href="https://github.com/DanarCahyadi12/pembayaran-spp/issues/4#issue-1899296132" download >di sini</a>
+  </li>
+  <li>
+    Import SQL yang sudah didownload
+  </li>
+  <li>
+    Clone repo ini ke folder www pada Laragon. Untuk XAMPP, clone ke folder htdocs
+  </li>
+  <li>
+    Jalankan project
   </li>
 </ul>
