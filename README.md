@@ -65,6 +65,27 @@ Aplikasi pembayaran SPP berbasis website
 
   <li>
     <strong> Petugas </strong>
-    <ul> </ul>
+    <ul> 
+      <li>
+        <p>Dashboard</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428485-06e9dde5-4c60-44a5-a591-ef54b7f6f3b2.png">
+      </li>
+      <li>
+        <p>Mencari siswa</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428495-80198fd2-7871-44ac-be47-b674c7c5edcb.png">
+      </li>
+      <li>
+        <p>Detail siswa</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428504-88682dfe-48a3-4595-9bae-86c5187b032a.png">
+      </li>
+      <li>
+        <p>Form pembayaran</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428504-88682dfe-48a3-4595-9bae-86c5187b032a.png">
+      </li>
+      <li>
+        <p>Bulan pembayaran</p>
+        <img src="https://user-images.githubusercontent.com/110749286/268428521-8dca20c2-046a-43a5-a596-28992f4e656e.png">
+      </li>
+    </ul>
   </li>
 </ul>
