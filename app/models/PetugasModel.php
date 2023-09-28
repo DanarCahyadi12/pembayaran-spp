@@ -28,6 +28,19 @@ class PetugasModel {
         
     }
 
+    public function getPetugasByEmail($email) {
+        $this->db->query('SELECT id,username,email,level FROM users WHERE email = :email');
+        $this->db->bind('email',$email);
+        $this->db->execute();
+        return $this->db->result();
+    }
+    public function getPetugasByUsername($username) {
+        $this->db->query('SELECT id,username,email,level FROM users WHERE username = :username');
+        $this->db->bind('username',$username);
+        $this->db->execute();
+        return $this->db->result();
+    }
+
 
   
 }

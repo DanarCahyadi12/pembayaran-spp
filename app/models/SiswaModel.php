@@ -193,4 +193,27 @@ class SiswaModel
         $this->db->execute();
         return $this->db->results();
     }
+
+
+    public function getSiswaByUsernameExceptId($nama_lengkap,$id) {
+        $this->db->query('SELECT * FROM siswa WHERE nama_lengkap = :nama_lengkap AND id != :id');
+        $this->db->bind('nama_lengkap',$nama_lengkap);
+        $this->db->bind('id',$id);
+        $this->db->execute();
+        return $this->db->result();
+    }
+    public function getSiswaByNISExceptId($NIS,$id) {
+        $this->db->query('SELECT * FROM siswa WHERE NIS = :NIS AND id != :id');
+        $this->db->bind('NIS',$NIS);
+        $this->db->bind('id',$id);
+        $this->db->execute();
+        return $this->db->result();
+    }
+    public function getSiswaByNISNExceptId($NISN,$id) {
+        $this->db->query('SELECT * FROM siswa WHERE NISN = :NISN AND id != :id');
+        $this->db->bind('NISN',$NISN);
+        $this->db->bind('id',$id);
+        $this->db->execute();
+        return $this->db->result();
+    }
 }

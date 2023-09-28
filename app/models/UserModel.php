@@ -20,4 +20,11 @@ class UserModel {
         $this->db->execute();
         return $this->db->result();
     }
+
+    public function getUserByUsername($username){
+        $this->db->query('SELECT id,username,email,level FROM users WHERE username = :username');
+        $this->db->bind('username',$username);
+        $this->db->execute();
+        return $this->db->result();
+    }
 }

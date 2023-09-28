@@ -5,7 +5,8 @@ class Register extends Controller{
 
 
     public function index(){
-        $this->view('templates/header');
+        $datas['title'] = "Register";
+        $this->view('templates/header',$datas);
         $this->view('register');
         $this->view('templates/footer');
     }
@@ -17,6 +18,18 @@ class Register extends Controller{
             $password = $_POST['password'];
             $username = $_POST['username'];
             $level = $_POST['level'];
+            $user = $this->model('UserModel')->getUserByUsername($username);
+            if($user) {
+                Flasher::setFlasher('Username telah terdaftar','register','error');
+                return Redirect::to('register');
+                
+            }
+            $user = $this->model('UserModel')->getUserByEmail($email);
+            if($user) {
+                Flasher::setFlasher('Email telah terdaftar','register','error');
+                return Redirect::to('register');
+                
+            }
             if(!passwordValidation(8,$password)){
                  Flasher::setFlasher('Password minimal harus 8 karakter','register','error');
                  return Redirect::to('register');

@@ -11,6 +11,9 @@
             <?php if(Flasher::exits() && Flasher::getFlasher()['action'] == 'update' && Flasher::getFlasher()['type'] == 'success'): ?>
                 <h3 class="text-success"><?= Flasher::getFlasher()['message'] ?></h3>
             <?php endif; ?>
+            <?php if(Flasher::exits() && Flasher::getFlasher()['action'] == 'update' && Flasher::getFlasher()['type'] == 'error'): ?>
+                <h3 class="text-danger"><?= Flasher::getFlasher()['message'] ?></h3>
+            <?php endif; ?>
             <form action="<?= url('siswa/editSiswa/' . $id) ?>" method="POST" class="row">
                 <div class="col-5">
                     <div class="mt-3">
@@ -88,3 +91,9 @@
 
 
 </section>
+
+<?php 
+
+Flasher::destroyFlasher();
+
+?>

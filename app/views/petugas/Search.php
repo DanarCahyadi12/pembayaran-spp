@@ -5,7 +5,7 @@
         ?>
 
         <div class="col-9 p-5">
-            <h1>Pembayaran</h1>
+            <h1>Cari siswa</h1>
             <div class='w-full'>
                 <form action="<?= url('petugas/cari') ?>" method="POST">
                     <?php 

@@ -100,7 +100,21 @@ class Siswa extends Controller {
             echo "<h1 style='text-align:center;'>Siswa tidak ditemukan</h1>";
             return;
         }
-
+        $siswa = $this->model('SiswaModel')->getSiswaByUsernameExceptId($_POST['nama_lengkap'],$id);
+        if($siswa) {
+            Flasher::setFlasher("Siswa atas nama {$_POST['nama_lengkap']} sudah terdaftar",'update','error');
+            return Redirect::to('siswa/edit/' . $siswaSingle['id']);
+        }
+        $siswa = $this->model('SiswaModel')->getSiswaByNISNExceptId($_POST['NISN'],$id);
+        if($siswa) {
+            Flasher::setFlasher("Siswa dengan NISN {$_POST['NISN']} sudah terdaftar",'update','error');
+            return Redirect::to('siswa/edit/' . $siswaSingle['id']);
+        }
+        $siswa = $this->model('SiswaModel')->getSiswaByNISExceptId($_POST['NIS'],$id);
+        if($siswa) {
+            Flasher::setFlasher("Siswa dengan NIS {$_POST['NIS']} sudah terdaftar",'update','error');
+            return Redirect::to('siswa/edit/' . $siswaSingle['id']);
+        }
         $result = $this->model('SiswaModel')->updateSiswa($_POST,intval($id));
         if($result) {
             Flasher::setFlasher('Update data siswa berhasil','update','success');

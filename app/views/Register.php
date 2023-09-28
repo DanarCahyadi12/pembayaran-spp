@@ -31,7 +31,6 @@
                 </select>
             </div>
             <button class="btn btn-primary mt-3 mb-3 mr-3">Register</button>
-            <a href="<?= url('') ?>">Sudah punya akun?</a>
         </form>
     </div>
 </div>

@@ -78,8 +78,7 @@ class Petugas extends Controller
         $datas['title'] = 'Detail siswa';
         $siswa = $this->model('SiswaModel')->getSiswaById($id);
         $siswaPaid = $this->model('SiswaModel')->getSiswaPaidById($id);
-        
-        if(!$siswa || !$siswaPaid ){
+        if(!$siswa){
             echo "<h1 class='text-center mx-auto'>Siswa tidak ditemukan</h1>";
             return;
         }
